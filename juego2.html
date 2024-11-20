@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma y resta</title>
+    <link rel="icon" type="image/x-icon" href="/img/suma.jpg">
+    <!-- Librerías CSS -->
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/animate.min.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container game-container">
+        <h1>Responde las siguientes preguntas:</h1>
+
+        <form id="quiz-form">
+            <div class="question mt-4">
+                <label class="mb-2" for="q1">Pregunta 1: 5 + 3 = ?</label>
+                <input class="mb-4" type="number" id="q1" required>
+            </div>
+
+            <div class="question">
+                <label class="mb-2" for="q2">Pregunta 2: 8 - 4 = ?</label>
+                <input class="mb-4" type="number" id="q2" required>
+            </div>
+
+            <div class="question">
+                <label class="mb-2" for="q3">Pregunta 3: 6 + 7 = ?</label>
+                <input type="number" id="q3" required>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg mt-3 mb-5" onclick="checkAnswers()">Corregir</button>
+        </form>
+
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
