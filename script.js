@@ -97,7 +97,7 @@ function checkAnswers() {
 
     // Redirigir después de un momento
     setTimeout(() => {
-        window.location.href = "index.html"; // Redirige al index.html
+        window.location.href = "juego.html"; // Redirige al index.html
     }, 4000); // Redirige después de 3 segundos
 }
 
